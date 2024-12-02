@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="border-b border-text_color_gray max-[1000px]:border-none">
+      <div class="container2 flex items-center gap-5 justify-between py-5">
+        <img
+          class="max-[530px]:hidden"
+          src="./assets/svg/germes_logo.svg"
+          alt=""
+        />
+        <img
+          class="min-[530px]:hidden"
+          src="./assets/svg/germes_logo small .svg"
+          alt=""
+        />
+        <input id="check" class="hidden" type="checkbox" />
+        <ul
+          class="links flex gap-14 text-[18px] max-[1036px]:gap-10 text-text_color_second"
+        >
+          <li><a href="/">Услуги</a></li>
+          <li><a href="/">Доставка</a></li>
+          <li><a href="/">Оплата</a></li>
+          <li><a href="/">Проекты</a></li>
+          <label
+            class="max-[1000px]:block hidden top-4 right-5 absolute"
+            for="check"
+          >
+            <img src="./assets/svg/x.svg" alt="" />
+          </label>
+        </ul>
+        <div class="flex items-center gap-7 max-[1000px]:hidden">
+          <img src="./assets/svg/star.svg" alt="" />
+          <img src="./assets/svg/cart.svg" alt="" />
+        </div>
+
+        <div
+          class="flex gap-0 flex-col items-center max-[1000px]:flex-row max-[1000px]:gap-5"
+        >
+          <a
+            class="text-text_color_main text-[24px] max-[530px]:hidden"
+            href="tel:8 (843) 203-93-43"
+            >8 (843) 203-93-43</a
+          >
+          <a class="hidden max-[530px]:block" href="tel:8 (843) 203-93-43">
+            <img src="./assets/svg/phone.svg" alt="" />
+          </a>
+          <p class="max-[1000px]:hidden text-color_main underline">
+            заказать обратный звонок
+          </p>
+          <label class="hidden max-[1000px]:block" for="check">
+            <img src="./assets/svg/menu.svg" alt="" />
+          </label>
+        </div>
+      </div>
+    </header>
+    <section class="pt-7 pb-14 flex flex-col gap-7">
+      <div class="container2 flex flex-row gap-5">
+        <div
+          class="basis-[25%] max-[991px]:hidden flex gap-0 flex-col shadow-[0_1px_10px_0_rgba(208,208,208,0.25)] rounded-md"
+        >
+          <div class="flex gap-5 bg-color_main rounded-md p-1">
+            <img src="./assets/svg/burger.svg" alt="" />
+            <p class="text-[18px] text-white">Каталог</p>
+          </div>
+          <div class="flex flex-col gap-1 p-4">
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Стеновые материалы</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Фасадные материалы</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Строительные блоки</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Отделочные материалы</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Сухие смеси</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Благоустройство</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Лако-красочные материалы</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_main">Прочие услуги</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+            <div class="flex gap-3 justify-between">
+              <p class="text-text_color_red">Распродажа товаров</p>
+              <img src="./assets/svg/arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="basis-[85%] max-[991px]:basis-[100%] flex gap-5 flex-col">
+          <div
+            class="hidden max-[991px]:flex items-center gap-4 justify-between bg-color_main text-white rounded-lg px-3"
+          >
+            <label
+              for="kat"
+              class="hidden max-[991px]:flex gap-5 p-1 max-[550px]:gap-3"
+            >
+              <img src="./assets/svg/burger.svg" alt="" />
+              <p
+                class="min-[550px]:block hidden max-[350px]:block text-[18px] text-white"
+              >
+                Каталог товаров
+              </p>
+            </label>
+            <p
+              class="text-[18px] text-white max-[550px]:block hidden max-[350px]:hidden"
+            >
+              Каталог товаров
+            </p>
+            <div class="max-[550px]:hidden">Акции</div>
+            <div class="max-[550px]:hidden">О компании</div>
+            <div class="max-[550px]:hidden">Контакты</div>
+            <div class="">
+              <img src="./assets/svg/Search copy.svg" alt="" />
+            </div>
+          </div>
+          <!-- block  -->
+          <div
+            class="flex max-[991px]:hidden gap-5 justify-between items-center text-[18px] uppercase max-[1037px]:text-[16px] text-text_color_main font-medium pl-4 max-[991px]:pl-0"
+          >
+            <p class="text-text_color_red">Акции</p>
+            <div
+              class="flex gap-3 items-center border-[1px] border-[rgba(109,109,109,0.7)] rounded-md p-1 w-[30%] px-3"
+            >
+              <input
+                placeholder="Введите название товара"
+                class="bg-transparent w-[100%] text-[16px] font-normal"
+                type="text"
+              />
+              <img src="./assets/svg/Search.svg" alt="" />
+            </div>
+            <p>о компании</p>
+            <p>КОнтакты</p>
+            <a href="./undex2.html">
+            <button 
+              class="bg-color_main rounded-md max-[1037px]:text-[16px] p-2 px-4 text-[18px] text-center text-white"
+            >
+              Оптовый заказ
+            </button>
+        </a>
+          </div>
+          <!-- block  -->
+          <div class="flex max-[991px]:hidden rounded-2xl">
+            <img
+              class="max-[1251px]:w-[60%] max-[991px]:w-[70%] max-[991px]:object-cover"
+              src="./assets/img/showcase.png"
+              alt=""
+            />
+            <div
+              class="bg-color_main text-white p-10 rounded-e-2xl flex flex-col gap-2 max-[1295px]:p-6 max-[991px]:w-full"
+            >
+              <h1 class="text-[22px] font-medium max-w-[283px]">
+                Кирпич облицовочный M95 Воткинский
+              </h1>
+              <p class="font-light text-[14px]">
+                Кол-во на поддоне, шт. - 297
+                <br />
+                Формат одинарный
+              </p>
+              <div class="flex gap-4 text-[12px] font-light underline">
+                <p>бесплатная доставка</p>
+                <p>в наличии</p>
+              </div>
+              <p class="text-[26px] font-medium">
+                4 500
+                <span class="font-normal text-[14px]">/ шт</span>
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  class="bg-white p-1 px-3 rounded-md text-black text-[14px]"
+                >
+                  Купить в 1 клик
+                </button>
+                <button class="bg-transparent border p-1.5 rounded-md px-3">
+                  <img src="./assets/svg/whitecart.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- bg img  -->
+          <div
+            class="bg-[url('/assets/img/showcase2.png')] bg-bottom bg-img hidden max-[991px]:block bg-no-repeat object-cover w-full rounded-2xl"
+          >
+            <div class="linwer p-14 max-[527px]:p-5 px-10 max-[470px]:px-5">
+              <div
+                class="rotate-[180deg] text-white flex gap-4 flex-col items-start max-[527px]:items-center max-[527px]:text-center max-[470px]:gap-2"
+              >
+                <p
+                  class="text-[30px] font-bold max-[470px]:text-[22px] max-[350px]:text-[18px]"
+                >
+                  Лако-красочные материалы
+                </p>
+                <p
+                  class="text-[20px] max-w-[356px] max-[470px]:text-[16px] max-[350px]:text-[12px]"
+                >
+                  Скидки 30% на немецкую продукцию Alpina на нашем сайте
+                </p>
+                <button
+                  class="text-[14px] border-2 rounded-md p-1 px-5 max-[350px]:text-[9px]"
+                >
+                  Перейти в каталог
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- block  -->
+          <div class="flex gap-5 justify-between max-[1044px]:hidden">
+            <div
+              class="flex text-[14px] text-text_color_main gap-3 items-center"
+            >
+              <img src="/assets/svg/Delivery.svg" alt="" />
+              <p class="max-w-[188px]">
+                Доставка стройматериалов и аренда спецтехники
+              </p>
+            </div>
+            <div
+              class="flex text-[14px] text-text_color_main gap-3 items-center"
+            >
+              <img src="/assets/svg/Sales.svg" alt="" />
+              <p class="max-w-[154px]">Скидки застройщикам и оптовикам</p>
+            </div>
+            <div
+              class="flex text-[14px] text-text_color_main gap-3 items-center"
+            >
+              <img src="/assets/svg/Price.svg" alt="" />
+              <p class="max-w-[86px]">Предлагаем лучшую цену</p>
+            </div>
+            <div
+              class="flex text-[14px] text-text_color_main gap-3 items-center"
+            >
+              <img src="/assets/svg/Works.svg" alt="" />
+              <p class="max-w-[115px]">Работаем 7 дней в неделю</p>
+            </div>
+          </div>
+        </div>
+        <!-- katalog -->
+        <input class="hidden" id="kat" type="checkbox" />
+        <div
+          class="kat hidden max-[991px]:flex gap-0 flex-col items-center text-center"
+        >
+          <label
+            for="kat"
+            class="absolute max-[991px]:block hidden top-4 left-5"
+          >
+            <img src="./assets/svg/x.svg" alt="" />
+          </label>
+          <div class="flex flex-col gap-2 p-4 text-center">
+            <a href="./undex2.html" class="text-text_color_main text-center">Стеновые материалы</a>
+
+            <a href="./undex2.html" class="text-text_color_main text-center">Фасадные материалы</a>
+
+            <a href="./undex2.html" class="text-text_color_main text-center">Строительные блоки</a>
+
+            <p class="text-text_color_main text-center">Отделочные материалы</p>
+
+            <p class="text-text_color_main text-center">Сухие смеси</p>
+
+            <p class="text-text_color_main text-center">Благоустройство</p>
+
+            <p class="text-text_color_main text-center">
+              Лако-красочные материалы
+            </p>
+
+            <p class="text-text_color_main text-center">Прочие услуги</p>
+
+            <p class="text-text_color_red">Распродажа товаров</p>
+
+            <div class="">Акции</div>
+            <div class="">О компании</div>
+            <div class="">Контакты</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container2 hidden max-[1046px]:flex gap-4 justify-between max-[785px]:grid grid-cols-2 max-[484px]:grid-cols-1"
+      >
+        <div
+          class="flex text-[14px] text-text_color_main gap-3 items-center max-[484px]:mx-auto"
+        >
+          <img src="/assets/svg/Delivery.svg" alt="" />
+          <p class="max-w-[188px] max-[484px]:text-[12px]">
+            Доставка товара и аренда спецтехники
+          </p>
+        </div>
+        <div
+          class="flex text-[14px] text-text_color_main gap-3 items-center max-[484px]:mx-auto"
+        >
+          <img src="/assets/svg/Sales.svg" alt="" />
+          <p class="max-w-[154px] max-[484px]:text-[12px]">
+            Скидки застройщикам и оптовикам
+          </p>
+        </div>
+        <div
+          class="flex text-[14px] text-text_color_main gap-3 items-center max-[484px]:hidden"
+        >
+          <img src="/assets/svg/Price.svg" alt="" />
+          <p class="max-w-[86px]">Предлагаем лучшую цену</p>
+        </div>
+        <div
+          class="flex text-[14px] text-text_color_main gap-3 items-center max-[484px]:hidden"
+        >
+          <img src="/assets/svg/Works.svg" alt="" />
+          <p class="max-w-[115px]">Работаем 7 дней в неделю</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container2">
+        <div class="flex items-center gap-6 justify-between">
+          <h1
+            class="text-text_color_main font-medium text-[36px] max-[768px]:text-[26px] max-[470px]:text-[20px] max-[400px]:text-center"
+          >
+            Спецпредложения
+          </h1>
+          <p
+            class="text-text_color_red font-medium max-[768px]:text-[14px] max-[600px]:hidden underline"
+          >
+            Перейти в раздел скидок
+          </p>
+        </div>
+        <div
+          class="grid grid-cols-5 max-[1272px]:gap-5 gap-7 py-10 max-[1156px]:grid-cols-4 max-[922px]:grid-cols-3 max-[660px]:grid-cols-3 max-[518px]:grid-cols-2 max-[338px]:grid-cols-1"
+        >
+          <div
+            class="rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="max-[542px]:hidden max-[518px]:flex rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="max-[542px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="max-[542px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="max-[922px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="max-[922px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="max-[1156px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div
+            class="max-[1156px]:hidden rounded flex flex-col gap-2 py-3 border-[0.70px] border-[rgba(134,134,134,0.3)] max-[660px]:gap-1"
+          >
+            <div
+              class="flex items-center justify-between pl-0 px-3 max-[660px]:hidden"
+            >
+              <div class="bg-[#f2994a] p-0.5 px-2">
+                <p class="text-[12px] text-white">Лидер продаж</p>
+              </div>
+              <img class="h-5" src="./assets/svg/star.svg" alt="" />
+            </div>
+            <img class="mx-auto" src="./assets/img/brige.png" alt="" />
+            <p
+              class="font-medium text-text_color_main px-3 max-[660px]:text-[12px]"
+            >
+              Кирпич облицовочный M95 Воткинский
+            </p>
+            <p class="px-3 text-[14px] font-light max-[660px]:hidden">
+              Кол-во на поддоне, шт. - 297 <br class="max-[674px]:hidden" />
+              Формат одинарный
+            </p>
+            <div class="flex px-3 justify-between">
+              <p
+                class="text-text_color_gray underline text-[12px] font-light max-[660px]:text-[11px]"
+              >
+                бесплатная доставка
+              </p>
+              <p
+                class="text-[#219653] underline text-[12px] font-light max-[660px]:hidden"
+              >
+                в наличии
+              </p>
+            </div>
+            <p class="text-[20px] font-medium px-3">
+              4 500 <span class="text-[10px]">/ шт</span>
+            </p>
+            <div class="flex items-center gap-3 px-3">
+              <button
+                class="bg-color_main p-1.5 px-5 max-[1352px]:px-3 max-[688px]:px-2 max-[688px]:py-1 rounded-md text-white text-[14px] max-[660px]:w-full"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="max-[660px]:hidden bg-transparent border p-2 rounded-md max-[688px]:px-2 max-[688px]:py-2 px-5 max-[1238px]:px-3"
+              >
+                <img src="./assets/svg/check.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container2 pt-8 pb-10 max-[400px]:pt-0">
+        <div class="flex items-center gap-3 justify-between">
+          <h1
+            class="text-text_color_main font-medium text-[36px] max-[768px]:text-[24px] max-[470px]:text-[20px] max-[400px]:mx-auto max-[380px]:text-[16px]"
+          >
+            Проекты из наших стройматерилов
+          </h1>
+          <p
+            class="text-color_main font-medium max-[768px]:text-[14px] max-[816px]:hidden underline"
+          >
+            Смотреть все проекты
+          </p>
+        </div>
+        <div
+          class="py-6 grid grid-cols-3 gap-6 max-[840px]:grid-cols-2 max-[340px]:grid-cols-1"
+        >
+          <img src="./assets/img/market1.png" alt="" />
+
+          <div
+            class="text-white bg-color_main rounded-xl p-6 flex flex-col gap- items-start max-[1290px]:gap- justify-between max-[944px]:p-4 max-[568px]:bg-[url('/assets/img/market5.png')] bg-no-repeat bg-cover bg-none max-[392px]:p-0"
+          >
+            <p
+              class="max-[392px]:hidden text-[22px] font-medium left-5 max-[1120px]:text-[16px] max-[568px]:mx-auto"
+            >
+              Аэропорт Казань
+            </p>
+            <p class="max-[1120px]:text-[12px] max-[568px]:hidden text-[14px]">
+              Комплекс услуг по доставке товара на Ваш строительный объект.
+              Комплекс услуг по доставке.
+            </p>
+            <img
+              class="max-[392px]:block object-cover w-full h-full hidden"
+              src="./assets/img/market3.png"
+              alt=""
+            />
+            <button
+              class="text-[14px] border-2 rounded-md p-1 px-5 max-[350px]:text-[9px] max-[568px]:mx-auto max-[432px]:px-2 max-[392px]:hidden"
+            >
+              Перейти в каталог
+            </button>
+          </div>
+          <img
+            class="hidden max-[840px]:flex"
+            src="./assets/img/market1.png"
+            alt=""
+          />
+          <img src="./assets/img/market2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="max-[792px]:hidden">
+      <div class="container2 pt-8 pb-10 max-[400px]:pt-0">
+        <div class="flex items-center gap-3 justify-between">
+          <h1
+            class="text-text_color_main font-medium text-[36px] max-[768px]:text-[24px] max-[470px]:text-[20px] max-[400px]:mx-auto max-[380px]:text-[16px]"
+          >
+            Дополнительные услуги
+          </h1>
+          <p
+            class="text-color_main font-medium max-[768px]:text-[14px] max-[816px]:hidden underline"
+          >
+            Наши услуги
+          </p>
+        </div>
+        <div
+          class="py-6 grid grid-cols-4 gap-6 max-[1164px]:grid-cols-3 max-[340px]:grid-cols-4"
+        >
+          <div
+            class="text-black bg-white rounded-3xl p-5 flex flex-col gap-5 max-[1290px]:gap-2 shadow-[0_1px_19px_0_rgba(208,208,208,0.4)] hover:bg-color_main duration-500 svg-need-parent max-[870px]:text-center max-[870px]:items-center"
+          >
+            <div
+              class="rounded-full bg-[rgba(159,166,238,0.1)] h-20 w-20 flex items-center justify-center"
+            >
+              <img class="svg-need" src="./assets/svg/uslugi1.svg" alt="" />
+            </div>
+            <p
+              class="max-[1120px]:text-[17px] text-[17px] font-bold max-[568px]:hidden"
+            >
+              Доставка стройматериалов
+            </p>
+            <p class="max-[1120px]:text-[12px] text-[14px] max-[568px]:hidden">
+              Комплекс услуг по доставке товара на Ваш строительный объект
+            </p>
+          </div>
+
+          <div
+            class="text-black bg-white rounded-3xl p-5 flex flex-col gap-5 max-[1290px]:gap-2 shadow-[0_1px_19px_0_rgba(208,208,208,0.4)] max-[392px]:p-0 hover:bg-color_main duration-500 svg-need-parent max-[870px]:text-center max-[870px]:items-center"
+          >
+            <div
+              class="rounded-full bg-[rgba(159,166,238,0.1)] h-20 w-20 flex items-center justify-center"
+            >
+              <img class="svg-need" src="./assets/svg/uslugi2.svg" alt="" />
+            </div>
+            <p
+              class="max-[1120px]:text-[17px] text-[17px] font-bold max-[568px]:hidden"
+            >
+              Шеф-монтаж
+            </p>
+            <p class="max-[1120px]:text-[12px] max-[568px]:hidden text-[14px]">
+              Демонстрация секретов успешного строительства
+            </p>
+          </div>
+          <div
+            class="text-black bg-white rounded-3xl p-5 flex flex-col gap-5 max-[1290px]:gap-2 shadow-[0_1px_19px_0_rgba(208,208,208,0.4)] max-[392px]:p-0 hover:bg-color_main duration-500 svg-need-parent max-[870px]:text-center max-[870px]:items-center"
+          >
+            <div
+              class="rounded-full bg-[rgba(159,166,238,0.1)] h-20 w-20 flex items-center justify-center"
+            >
+              <img class="svg-need" src="./assets/svg/uslugi3.svg" alt="" />
+            </div>
+            <p
+              class="max-[1120px]:text-[17px] text-[17px] font-bold max-[568px]:hidden"
+            >
+              Кладка кирпича
+            </p>
+            <p class="max-[1120px]:text-[12px] max-[568px]:hidden text-[14px]">
+              Кладка кирпича и блоков Pototherm
+            </p>
+          </div>
+
+          <div
+            class="max-[1164px]:hidden text-black bg-white rounded-3xl p-5 flex flex-col gap-5 max-[1290px]:gap-5 shadow-[0_1px_19px_0_rgba(208,208,208,0.4)] max-[392px]:p-0 hover:bg-color_main duration-500 svg-need-parent"
+          >
+            <div
+              class="rounded-full bg-[rgba(159,166,238,0.1)] h-20 w-20 flex items-center justify-center"
+            >
+              <img class="svg-need" src="./assets/svg/uslugi4.svg" alt="" />
+            </div>
+            <p
+              class="max-[1120px]:text-[17px] text-[17px] font-bold max-[568px]:hidden"
+            >
+              Сезонное хранение
+            </p>
+            <p class="max-[1120px]:text-[12px] max-[568px]:hidden text-[14px]">
+              Хранение стройматериалов приобретенных зимой
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container2 pt-3 pb-5 max-[400px]:pt-0">
+        <div class="flex items-center gap-3 justify-between">
+          <h1
+            class="text-text_color_main font-medium text-[36px] max-[768px]:text-[24px] max-[470px]:text-[20px] max-[400px]:mx-auto max-[380px]:text-[16px]"
+          >
+            Наш шоурум
+          </h1>
+          <p
+            class="text-color_main font-medium max-[768px]:text-[14px] max-[816px]:hidden underline"
+          >
+            Перейти в контакты
+          </p>
+        </div>
+        <div
+          class="py-6 grid grid-cols-3 gap-6 max-[654px]:grid-cols-2 max-[378px]:grid-cols-1 max-[340px]:grid-cols-1"
+        >
+          <img
+            class="max-[378px]:hidden"
+            src="./assets/img/showroom.png"
+            alt=""
+          />
+          <img src="./assets/img/showroom2.png" alt="" />
+          <img
+            class="max-[654px]:hidden"
+            src="./assets/img/showroom3.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="pb-4">
+      <div class="cotainer2">
+        <div class="swiper mySwiper">
+          <div class="items-center swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/helpercomany/help7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#f7f7f7] py-4">
+      <div class="container2">
+        <div
+          class="flex gap-5 items-start justify-between max-md:flex-col max-md:mx-auto max-md:items-center pb-4"
+        >
+          <ul
+            class="flex text-text_color_main flex-col gap-2 max-[768px]:hidden"
+          >
+            <h1
+              class="text-[24px] font-medium text-text_color_main max-[768px]:hidden"
+            >
+              Организация
+            </h1>
+            <li><a href="/">О компании</a></li>
+            <li><a href="/">Услуги</a></li>
+            <li><a href="/">Статьи</a></li>
+            <li><a href="/">Вакансии</a></li>
+          </ul>
+          <ul
+            class="flex text-text_color_main flex-col gap-2 max-[768px]:hidden"
+          >
+            <h1 class="text-[24px] font-medium text-text_color_main">
+              Как купить
+            </h1>
+            <li><a href="/">Доставка </a></li>
+            <li><a href="/">Оплата</a></li>
+            <li><a href="/">Проекты</a></li>
+            <li><a href="/">Контакты</a></li>
+          </ul>
+          <ul
+            class="flex text-text_color_main flex-col gap-2 max-[768px]:flex-row max-[768px]:gap-3 max-md:mx-auto"
+          >
+            <h1
+              class="text-[24px] font-medium max-[768px]:hidden text-text_color_main"
+            >
+              Мы на связи
+            </h1>
+            <li><a href="tel:8 (843) 203-93-43">8 (843) 203-93-43 </a></li>
+            <li><a href="mailto:info@td-germes.ru">info@td-germes.ru</a></li>
+            <div class="flex gap-2 max-[768px]:hidden">
+              <img src="./assets/svg/whh_whatsapp.svg" alt="" />
+              <img
+                class="max-[768px]:hidden"
+                src="./assets/svg/logos_telegram.svg"
+                alt=""
+              />
+            </div>
+          </ul>
+          <ul
+            class="flex text-text_color_main flex-col gap-2 max-md:mx-auto max-md:text-center"
+          >
+            <h1
+              class="text-[24px] font-medium max-md:hidden text-text_color_main"
+            >
+              Наш адрес
+            </h1>
+            <img
+              class="max-md:block hidden h-5"
+              src="./assets/svg/location.svg"
+              alt=""
+            />
+            <li><a class="max-md:font-bold" href="/">Казань </a></li>
+            <li><a href="location">ул.Сары Садыковой 30, 2 этаж</a></li>
+            <li class="max-md:hidden">
+              <a href="/">
+                Пн - Пт c 8:30 до 17:30 <br />
+                Суббота с 9:00 до 14:00</a
+              >
+            </li>
+          </ul>
+          <button
+            class="bg-transparent border border-color_main rounded-md max-[1037px]:text-[16px] max-[768px]:flex hidden p-2 px-4 text-[18px] mx-auto items-center gap-4 text-black max-[300px]:gap-2"
+          >
+            <img src="./assets/svg/phone.svg" alt="" />Заказать обратный звонок
+          </button>
+          <button
+            class="bg-color_main rounded-md max-[1037px]:text-[16px] max-[968px]:hidden p-2 px-4 text-[18px] my-auto text-center text-white"
+          >
+            Оптовый заказ
+          </button>
+        </div>
+        <div class="py-4 flex border-t border-text_color_gray justify-between items-center">
+          <p class="text-[14px] text-text_color_second">
+            © 2012 — 2020, ООО «ТК «Гермес»<br />
+            Сайт www.td-germes.ru носит исключительно информационный характер и
+            ни при каких <br />условиях не является публичной офертой.
+          </p>
+          <div class="flex gap-4 max-[844px]:hidden">
+            <img src="./assets/svg/logos_visaelectron.svg" alt="">
+            <img src="./assets/svg/logos_mastercard.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          280: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          350: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          550: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+
+          1000: {
+            slidesPerView: 7,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+<!-- max-[991px]:hidden -->
